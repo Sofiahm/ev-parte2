@@ -11,25 +11,33 @@ html,body{
 }
 
 body{
-	background:linear-gradient(#ffbfe6,#f5fe02);
+	background:linear-gradient(#f5fe02,#ffbfe6);
 }
 
-.bg-azul {
-	background:rgba(38,77,149,1.00);}
+.bg-orange{
+	background:	linear-gradient(to right,#ffc23d,#f5fe02);
+	height: 60px ; width: 770px;
+}
+
+
 
 h1{
 		font-family: 'Raleway', sans-serif;
-		font-weight: 400;
+		font-weight: 500;
+		text-transform:uppercase;
+		text-shadow:3px 1px #ffc23d;
+		border-bottom: 1px solid orange;
 }
 
 h5{
 		font-family: 'Raleway', sans-serif;
 		font-weight: 400;
+		font-size: 20px;
+		text-shadow:3px 1px #ffc23d;
 }
 
 #menu{
 	position:fixed;
 	bottom:2rem
 	right: 2.5rem;
-}
 }

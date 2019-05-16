@@ -12,7 +12,7 @@
       <div class="row py-5">
         <div class="col-11 col-sm-10 mx-auto">
           <h1>Sofia Hinostroza</h1>
-          <pclass="lead">Los siguientes trabajos son una muestra de cuando pense que iba a ser diseñadora gráfica </p>
+          <pclass="lead">Las siguientes imágenes son mayormente trabajos del área de diseño gráfico :) </p>
           <div id="cuestiones"></div>
         </div>
       </div>
@@ -36,14 +36,14 @@
     <script>
 
 
-  $.getJSON( "https://raw.githubusercontent.com/profesorfaco/dno037-2019/gh-pages/clase-10/total.json", function( curso ) {
+  $.getJSON( "https://raw.githubusercontent.com/profesorfaco/dno037-2019/gh-pages/portfolio.json", function( curso ) {
 
 console.log(curso);
     $.each(curso[9].trabajos, function(i, trabajo) {
-    $("#cuestiones").append("<h5 class= 'my-2 py-3 pl-2 '>" + trabajo.titulo + "</h5>").append("<img src='" + trabajo.imagen + "' class=img-fluid border-bottom pb-3 mb-3'>").append("<p class= 'my-2 py-3 pl-2 border-bottom '>" +  trabajo.descriptor + "</p>");
+    $("#cuestiones").append("<h5 class= 'my-2 py-3 '>" + trabajo.titulo + "</h5>").append("<img src='" + trabajo.imagen + "' class=img-fluid border-bottom pb-3 mb-3'>").append("<p class= 'my-2 py-3 border-bottom '>" +  trabajo.descriptor + "</p>");
       });
       });
-  });
+
 
 
 
