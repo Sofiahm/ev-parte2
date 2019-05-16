@@ -13,7 +13,7 @@
         <div class="col-11 col-sm-10 mx-auto">
 
       <h1>Rocio Sidgman</h1>
-      <pclass="lead">Los siguientes trabajos son una muestra del trabajo de mi amiga seca Rocio! </p>
+    <p class="lead">Estos son tres trabajos de <span id="nombre"></span>, mi amiga bacana! </p>
       <div id="cuestiones"></div>
     </div>
         </div>
@@ -36,8 +36,12 @@
 console.log(curso);
 
     $.each(curso[15].trabajos, function(i, trabajo) {
-    $("#cuestiones").append("<h5 class= 'my-2 py-3 pl-2 '>" + trabajo.titulo + "</h5>").append("<img src='" + trabajo.imagen + "' class=img-fluid border-bottom pb-3 mb-3'>").append("<p class= 'my-2 py-3 pl-2 border-bottom '>" +  trabajo.descriptor + "</p>");
+    $("#cuestiones").append("<h5 class= 'my-2 py-3 '>" + trabajo.titulo + "</h5>").append("<img src='" + trabajo.imagen + "' class=img-fluid border-bottom pb-3 mb-3'>").append("<p class= 'my-2 py-3 border-bottom '>" +  trabajo.descriptor + "</p>");
       });
+
+
+      $("#nombre").html('<a href="' + curso[15].github + '">' + curso[15].nombre + '</a>')
+
       });
 
     </script>
